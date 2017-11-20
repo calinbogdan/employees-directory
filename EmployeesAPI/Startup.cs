@@ -37,7 +37,11 @@ namespace EmployeesAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            app.UseMvc(mvc => {
+                mvc.MapRoute(
+                    name: "default", 
+                    template: "{controller}/{action?}");
+            });
         }
     }
 }

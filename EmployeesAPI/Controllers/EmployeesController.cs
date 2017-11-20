@@ -12,13 +12,16 @@ namespace EmployeesAPI.Controllers
         {
             _employeesRepository = employeesRepository;
         }
-        public async Task<IActionResult> GetAll() 
+
+        [HttpGet]
+        public async Task<IActionResult> Get() 
         {
             var employees = await _employeesRepository.GetAllAsync();
             return Ok(employees);
         }
 
-        public async Task<IActionResult> PostAsync([FromBody]Employee employee) 
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody]Employee employee) 
         {
             if (employee == null)
                 return BadRequest();
