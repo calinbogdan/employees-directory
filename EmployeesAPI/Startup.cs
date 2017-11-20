@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using EmployeesAPI.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -25,8 +26,10 @@ namespace EmployeesAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddTransient<Context>();
             services.AddTransient<EmployeesRepository>();
+
+            services.AddDbContext<Context>(options => 
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,6 +39,12 @@ namespace EmployeesAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(settings => {
+                settings.WithOrigins("http://localhost:3000")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
 
             app.UseMvc(mvc => {
                 mvc.MapRoute(
