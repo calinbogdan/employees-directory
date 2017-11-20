@@ -1,3 +1,4 @@
+using EmployeesAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeesAPI.Data
