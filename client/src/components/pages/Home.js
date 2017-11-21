@@ -27,7 +27,7 @@ export default class Home extends React.Component {
         return (
             <div>
                 <ul>
-                    {this.state.employees.map((index, employee) => {
+                    {this.state.employees.map((employee, index) => {
                         return (
                         <li key={index}>
                             <h1>Name: {employee.name}</h1>
