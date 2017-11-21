@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Employee from './../Employee';
+
 export default class Home extends React.Component {
     constructor() {
         super();
@@ -30,8 +32,9 @@ export default class Home extends React.Component {
                     {this.state.employees.map((employee, index) => {
                         return (
                         <li key={index}>
-                            <h1>Name: {employee.name}</h1>
-                            <h4>Email: {employee.email}</h4>
+                            <Employee id={employee.id}
+                                name={employee.name}
+                                email={employee.email}/>
                         </li>);
                     })}
                 </ul>
