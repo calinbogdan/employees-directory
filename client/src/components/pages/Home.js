@@ -1,6 +1,7 @@
 import React from 'react';
+import { Container } from 'reactstrap';
 
-import Employee from './../Employee';
+import EmployeesList from './../EmployeesList';
 
 export default class Home extends React.Component {
     constructor() {
@@ -28,16 +29,9 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <ul>
-                    {this.state.employees.map((employee, index) => {
-                        return (
-                        <li key={index}>
-                            <Employee id={employee.id}
-                                name={employee.name}
-                                email={employee.email}/>
-                        </li>);
-                    })}
-                </ul>
+                <Container>
+                    <EmployeesList employees={this.state.employees}/>
+                </Container>
             </div>
         )
     }

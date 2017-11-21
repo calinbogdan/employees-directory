@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from 'reactstrap';
 
 class Employee extends React.Component {
     render() {
         return(
-            <div>
-                <span>#{this.props.id}</span> | 
-                <span>{this.props.name}</span> | 
-                <span>{this.props.email}</span>
-                <button>Edit</button>
-                <button>Delete</button> 
-            </div>
+            <tr>
+                <td>{this.props.id}</td>  
+                <td>{this.props.name}</td> 
+                <td>{this.props.email}</td>
+                <td><Button>Edit</Button></td>
+                <td><Button>Delete</Button> </td>
+            </tr>
         )
     }
 }
