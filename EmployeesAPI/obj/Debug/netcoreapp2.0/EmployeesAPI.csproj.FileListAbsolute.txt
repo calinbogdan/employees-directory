@@ -1,0 +1,10 @@
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\bin\Debug\netcoreapp2.0\EmployeesAPI.deps.json
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\bin\Debug\netcoreapp2.0\EmployeesAPI.runtimeconfig.json
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\bin\Debug\netcoreapp2.0\EmployeesAPI.runtimeconfig.dev.json
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\bin\Debug\netcoreapp2.0\EmployeesAPI.dll
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\bin\Debug\netcoreapp2.0\EmployeesAPI.pdb
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\obj\Debug\netcoreapp2.0\EmployeesAPI.csproj.CoreCompileInputs.cache
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\obj\Debug\netcoreapp2.0\EmployeesAPI.AssemblyInfoInputs.cache
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\obj\Debug\netcoreapp2.0\EmployeesAPI.AssemblyInfo.cs
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\obj\Debug\netcoreapp2.0\EmployeesAPI.dll
+D:\Workspaces\EmployeesDirectory\EmployeesAPI\obj\Debug\netcoreapp2.0\EmployeesAPI.pdb

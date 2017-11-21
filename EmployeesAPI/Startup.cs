@@ -30,6 +30,7 @@ namespace EmployeesAPI
 
             services.AddDbContext<Context>(options => 
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +50,7 @@ namespace EmployeesAPI
             app.UseMvc(mvc => {
                 mvc.MapRoute(
                     name: "default", 
-                    template: "{controller}/{action?}");
+                    template: "{controller}/{action=Get}");
             });
         }
     }

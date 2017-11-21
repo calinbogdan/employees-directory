@@ -12540,11 +12540,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Workspaces\\EmployeesDirectory\\EmployeesAPI\\EmployeesAPI.csproj",
+      "projectUniqueName": "D:\\Workspaces\\EmployeesDirectory\\EmployeesAPI\\EmployeesAPI.csproj",
       "projectName": "EmployeesAPI",
-      "projectPath": "d:\\Workspaces\\EmployeesDirectory\\EmployeesAPI\\EmployeesAPI.csproj",
+      "projectPath": "D:\\Workspaces\\EmployeesDirectory\\EmployeesAPI\\EmployeesAPI.csproj",
       "packagesPath": "C:\\Users\\Calin\\.nuget\\packages\\",
-      "outputPath": "d:\\Workspaces\\EmployeesDirectory\\EmployeesAPI\\obj\\",
+      "outputPath": "D:\\Workspaces\\EmployeesDirectory\\EmployeesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
