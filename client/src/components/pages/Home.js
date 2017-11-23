@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 
 import EmployeesList from './../EmployeesList';
 
@@ -30,6 +30,11 @@ export default class Home extends React.Component {
         return (
             <div>
                 <Container>
+                    <Row>
+                        <Col>
+                            <Button>Add new employee</Button>
+                        </Col>
+                    </Row>
                     <EmployeesList employees={this.state.employees}/>
                 </Container>
             </div>
